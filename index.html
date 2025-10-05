@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayang 💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            animation: fadeInDown 2s ease;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            margin-bottom: 1em;
+            animation: fadeIn 3s ease;
+        }
+
+        img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px rgba(255,255,255,0.5);
+            margin-bottom: 20px;
+            animation: zoomIn 2s ease;
+        }
+
+        p {
+            font-size: 1.1em;
+            width: 80%;
+            max-width: 500px;
+            line-height: 1.6;
+            animation: fadeInUp 3s ease;
+        }
+
+        button {
+            margin-top: 30px;
+            background-color: #fff;
+            color: #ff5e78;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff5e78;
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Ganti src dengan foto pacar kamu -->
+    <img src="d:\alpukat\palang_parkir\bocil.jpg" alt="Foto Pacar Tersayang">
+
+    <h1>Selamat Ulang Tahun, Sayangku 💕</h1>
+    <h2>Semoga hari kamu seindah senyum kamu hari ini 😊</h2>
+
+    <p>
+        Aku bersyukur setiap hari karena bisa mengenal dan mencintaimu.  
+        Terima kasih sudah hadir dan membuat hidupku lebih berwarna.  
+        Di hari istimewamu ini, aku cuma mau bilang:  
+        kamu luar biasa, dan aku akan selalu mencintaimu. 💖
+    </p>
+
+    <button onclick="putarLagu()">🎵 Putar Lagu Romantis</button>
+
+    <audio id="lagu" src="c:\Users\ASUS\Downloads\Bima Tarore - Selamat Ulang Tahun (Official Music Video).mp3"></audio>
+
+    <script>
+        function putarLagu() {
+            const lagu = document.getElementById('lagu');
+            lagu.play();
+            alert("Selamat ulang tahun, sayang! 💗");
+        }
+    </script>
+</body>
+</html>
